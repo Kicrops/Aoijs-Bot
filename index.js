@@ -10,7 +10,11 @@ const bot = new Bot( Config.Bot );
 bot.onMessage();
 //status 
 bot.status( ...Status );
-
+//properties 
+bot.customFunctions = {
+     djs : new bot.cacheManager.Group() ,
+     'aoi.js' : new bot.cacheManager.Group() 
+}
 ////setting up the LoadCommands Class 
 const loader = new LoadCommands(bot);
 
