@@ -17,6 +17,8 @@ bot.customFunctions = {
 }
 ////setting up the LoadCommands Class 
 const loader = new LoadCommands(bot);
+//colors™
+loader.setColors( loader.defaultThemes.normal );
 
 ////setting up the Voice Class 
 const voice = new Voice(bot,Config.Voice.ytdl,Config.Voice.scdl,Config.Voice.cache);
