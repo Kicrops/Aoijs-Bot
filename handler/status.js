@@ -11,23 +11,14 @@
 */
 
 module.exports = [
-
     {
-
     text : "Aoijs V5 Template",
-
     type : "STREAMING",
-
     time : 13
-
-},
-
+    },
     {
-
     text : "Made By Ayaka",
-
     type : "WATCHING",
-
     time : 13
-
-}]
+    }
+]
