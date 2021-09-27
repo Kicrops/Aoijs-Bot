@@ -23,7 +23,14 @@ module.exports = [
       if(data.err) return d.error(data.err);
       
       let [ condition,trueText,falseText ] = data.inside.splits;
-      d.helpers.CheckCondition.solve(d.helpers.mustEscape(condition))
+			
+      const res = await eval(d.helpers.CheckCondition.solve(d.helpers.mustEscape(condition)));
+			
+      data.result = res ? trueText : falseText ;
+			
+      return {
+        code : d.util.setCode( data );
+			} 
     }
   }
 ]
