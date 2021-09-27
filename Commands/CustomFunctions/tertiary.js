@@ -23,8 +23,7 @@ module.exports = [
       if(data.err) return d.error(data.err);
       
       let [ condition,trueText,falseText ] = data.inside.splits;
-      d.helpers.CheckCondition(d
-.helpersmustEscape(condition)
+      d.helpers.CheckCondition.solve(d.helpers.mustEscape(condition))
     }
   }
 ]
