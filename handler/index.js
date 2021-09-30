@@ -1,8 +1,8 @@
-module.exports = (Options) => {
+module.exports = async (Options) => {
 
-  Options.loader.load(Options.bot.cmd,"../Commands/Bot/");
-  Options.loader.load(Options.voice.cmd,"../Commands/Voice/");
-  Options.loader.load(Options.bot.customFunctions,"../Commands/CustomFunctions/");
+  await Options.loader.load(Options.bot.cmd,"../Commands/Bot/");
+  await Options.loader.load(Options.voice.cmd,"../Commands/Voice/");
+  await Options.loader.load(Options.bot.customFunctions,"../Commands/CustomFunctions/");
 	
   Options.bot.functionManager.createCustomFunctions( ...( Options.bot.customFunctions.djs.allValues().concat( Options.bot.customFunctions["aoi.js"].allValues() ) );
 }
