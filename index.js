@@ -7,7 +7,7 @@ const Status = require('./handler/status.js');
 ////setting up the Bot
 const bot = new Bot( Config.Bot );
 //events
-bot.onMessage();
+bot.onInteractionCreate();
 //status 
 bot.status( ...Status );
 //properties 
