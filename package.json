@@ -1,5 +1,12 @@
 {
   "name": "bot",
+  "author": {
+    "name": "USERSATOSHI"
+  },
+  "maintainers": [ "USERSATOSHI" ],
+  "bugs": {
+    "url": "https://github.com/USERSATOSHI/Aoijs-Bot/issue"
+  },
   "version": "0.0.1",
   "description": "A simple Bot Example Made In AoijsV5",
   "main": "index.js",
@@ -12,7 +19,8 @@
     "aoi.js": "^5.0.0",
     "dbdjs.db": "^2.0.0",
     "ffmpeg-static": "^4.4.0",
-    "ytdl-core": "^4.9.1"
+    "ytdl-core": "^4.9.1",
+    "tweetnacl": "1.0.3"
   },
   "engines": {
     "node": ">=16.6.1"
